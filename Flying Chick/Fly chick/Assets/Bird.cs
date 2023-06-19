@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
-    public GameManager gameManager;
-    public Rigidbody2D rigidBody;
-    public float forse = 6;
+    public GameManager GameManager;
+    public Rigidbody2D RigidBody;
+    public float Forse = 6;
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            rigidBody.AddForce(Vector2.up * forse, mode: ForceMode2D.Impulse);
+            RigidBody.AddForce(Vector2.up * Forse, mode: ForceMode2D.Impulse);
 
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gameManager.GameOver();
+        GameManager.GameOver();
     }
 }
