@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
 
-    // Start is called before the first frame update
     private void Start()
     {
         Time.timeScale = 1;
