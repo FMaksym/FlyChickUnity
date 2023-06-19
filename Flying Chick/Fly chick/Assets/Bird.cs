@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bird : MonoBehaviour
+public class Bird : MonoBehaviour
 {
     public GameManager gameManager;
     public Rigidbody2D rigidBody;
     public float forse = 6;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
